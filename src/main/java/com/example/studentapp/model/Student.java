@@ -1,9 +1,12 @@
 package com.example.studentapp.model;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public class Student {
+public class Student implements Serializable {
+
+    private static final long serialVersionUID = -8364166641999382718L;
 
     private Long id;
     private String firstName;
@@ -14,7 +17,7 @@ public class Student {
     private Date createdAt;
 
     public Student() {
-        
+
     }
 
     public Student(Long id, String firstName, String lastName, String memberId, Date birthDate, List<Course> courses,

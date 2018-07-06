@@ -1,8 +1,11 @@
 package com.example.studentapp.model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Course {
+public class Course implements Serializable {
+
+    private static final long serialVersionUID = 4193794056868733402L;
 
     private Long id;
     private String name;
