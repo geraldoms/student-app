@@ -3,13 +3,10 @@ language: java
 jdk:
   - oraclejdk8
 
-before_install:
-  - chmod +x mvnw
-
-install: true
-
+install:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 script:
-  - ./mvnw clean install
+  - mvn test
 
 cache:
   directories:
