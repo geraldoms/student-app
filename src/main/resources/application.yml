@@ -3,5 +3,5 @@ logging:
     org.springframework.web: DEBUG
 
 server:
-    servlet:
-        contextPath: /api
+  servlet:
+    contextPath: /api
